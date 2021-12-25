@@ -1,2 +1,3 @@
 # homepage
-Homepage for personal website
+Personal website with portfolio, projects, and blog. 
+A work in progress...
