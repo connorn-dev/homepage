@@ -40,7 +40,7 @@ hr {
   border: 0;
   background-color: white;
   border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-shadow: rgba(0, 102, 255, 0.2) 0 15px 30px -5px;
   color: black;
   display: flex;
   font-family: "Fredoka One", cursive;
@@ -70,4 +70,51 @@ hr {
 
 .main-button:hover span {
   background-color: rgb(5, 6, 45);
+}
+
+/* Animation arrow-> */
+.arrow-down {
+  width: 60px;
+  height: 30px;
+  position: relative;
+  left: 50%;
+  bottom: 0px;
+  animation: arrow 0.7s 1.4s infinite ease-out alternate;
+
+  margin-top: 20px;
+}
+
+.left {
+  position: absolute;
+  height: 10px;
+  width: 30px;
+  background: linear-gradient(180deg, red, orange);
+  transform: rotate(225deg);
+  top: 10px;
+  left: 10px;
+  border-radius: 4px;
+  transform-origin: 5px 50%;
+  animation: leftArrow 0.5s 1s infinite ease-out alternate;
+}
+
+.right {
+  position: absolute;
+  height: 10px;
+  width: 30px;
+  background: linear-gradient(-180deg, red, orange);
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 10px;
+  border-radius: 4px;
+  transform-origin: 5px 50%;
+  animation: rightArrow 0.5s 1s infinite ease-out alternate;
+}
+
+@keyframes arrow {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 20px;
+  }
 }
