@@ -1,5 +1,5 @@
 .main-container {
-  width: 50%;
+  width: 80vw;
   margin: auto;
   text-align: center;
   margin-top: 7%;
@@ -9,8 +9,10 @@
   border-bottom: 3px;
   font-size: large;
   font-family: "Fredoka One", cursive;
-  font-size: 50px;
+  font-size: 5vh;  
+  border: 3px solid red;
 }
+
 p {
   padding: 0px;
   margin: 0px;
@@ -44,10 +46,8 @@ hr {
   color: black;
   display: flex;
   font-family: "Fredoka One", cursive;
-  font-size: 32px;
+  font-size: 2vh;
   line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
   padding: 3px;
   text-decoration: none;
   margin: 10px;
@@ -79,12 +79,13 @@ hr {
   position: relative;
   left: 50%;
   bottom: 0px;
-  animation: arrow 0.7s 1.4s infinite ease-out alternate;
-
+  animation: arrow 0.7s .1s infinite ease-out alternate;
   margin-top: 20px;
+  display: none;
 }
 
 .left {
+  animation: leftArrow 0.5s 1s infinite ease-out alternate;
   position: absolute;
   height: 10px;
   width: 30px;
@@ -94,10 +95,10 @@ hr {
   left: 10px;
   border-radius: 4px;
   transform-origin: 5px 50%;
-  animation: leftArrow 0.5s 1s infinite ease-out alternate;
 }
 
 .right {
+  animation: rightArrow 0.5s 1s infinite ease-out alternate;
   position: absolute;
   height: 10px;
   width: 30px;
@@ -107,7 +108,6 @@ hr {
   left: 10px;
   border-radius: 4px;
   transform-origin: 5px 50%;
-  animation: rightArrow 0.5s 1s infinite ease-out alternate;
 }
 
 @keyframes arrow {
@@ -117,4 +117,11 @@ hr {
   100% {
     top: 20px;
   }
+}
+
+/* Content Container */
+.content-container {
+  border: solid 2px purple;
+  margin-top: 2.7vh;
+  display: none;
 }
