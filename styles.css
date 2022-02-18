@@ -1,33 +1,40 @@
 .main-container {
-  width: 80vw;
+  width: 60vw;
   margin: auto;
-  text-align: center;
   margin-top: 7%;
+  text-align: center;
 }
 .text-container {
   justify-content: center;
   border-bottom: 3px;
+  width: 60vw;
+  padding: 0px;
+  margin: 0px;
+  color: #313638;
+}
+
+.title {
+  padding: 0px;
+  margin: 0px;
+  color: #313638;
+  font-size: 5vh;  
   font-size: large;
   font-family: "Fredoka One", cursive;
   font-size: 5vh;  
-  border: 3px solid red;
 }
 
-p {
-  padding: 0px;
-  margin: 0px;
-}
 hr {
   margin: 30px 0;
   height: 4px;
   border: none;
+  color: #3599E6;
   background: -webkit-gradient(
     linear,
     0 0,
     100% 0,
     from(transparent),
     to(transparent),
-    color-stop(50%, #0066ff)
+    color-stop(50%, #3599E6)
   );
 }
 
@@ -64,12 +71,12 @@ hr {
 }
 
 .main-button:hover {
-  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  background-image: linear-gradient(144deg, #3599E6, #AC61DF);
   color: white;
 }
 
 .main-button:hover span {
-  background-color: rgb(5, 6, 45);
+  background-color: #313638;
 }
 
 /* Animation arrow-> */
@@ -89,7 +96,7 @@ hr {
   position: absolute;
   height: 10px;
   width: 30px;
-  background: linear-gradient(180deg, red, orange);
+  background: linear-gradient(90deg, #33ccff 0%, #ff99cc 100%);
   transform: rotate(225deg);
   top: 10px;
   left: 10px;
@@ -102,7 +109,7 @@ hr {
   position: absolute;
   height: 10px;
   width: 30px;
-  background: linear-gradient(-180deg, red, orange);
+  background: linear-gradient(-90deg, rgb(207, 138, 207), rgb(46, 190, 142));
   transform: rotate(-45deg);
   top: 10px;
   left: 10px;
