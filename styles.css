@@ -1,6 +1,6 @@
 body {
-
   background-color: rgb(27, 33, 39);
+  display: block;
 }
 
 .header-bar {
@@ -12,20 +12,20 @@ body {
   margin: auto;
   margin-top: 2%;
   display: flex;
-  padding: .3em;
+  padding: .2em;
+  border-radius: 8px;
 }
 
 .header-bar > .header-left{
-background-color: red;
 width: 15%;
 height: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
-
+border-right: solid 2px black;
+border-radius: 2px;
 }
 .header-bar > .header-right{
-background-color: blue;
 width: 85%;
 height: 100%;
 display: flex;
@@ -33,27 +33,6 @@ justify-content: center;
 align-items: center;
 }
 
-<<<<<<< HEAD
-.home-btn{
-  background-color: rgb(218, 74, 74);
-  border-radius: 8px;
-  box-shadow: rgba(0, 102, 255, 0.2) 0 15px 30px -5px;
-  margin: 5px px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logo-mini{
-  font-family: 'Lato', sans-serif;
-  text-decoration: none;
-  font-size: 35px;
-  color: black;
-  margin: 2px 5px;
-}
-
-.header-right {
-  display: flex;
-=======
 .h-btn{
   width: 85%;
   height: 85%;
@@ -61,63 +40,77 @@ align-items: center;
   font-family: Lato, sans-serif;
   letter-spacing: 1px;
   justify-content: center;
->>>>>>> 2d38251d77f91aabc5067c57f5920f7564eb328a
-}
-.m-btn{
-  width: 85%;
-  height: 85%;
-  font-size: 1.5vh;
-  font-family: Lato, sans-serif;
-  letter-spacing: 1px;
-  justify-content: center;
   margin: 1%;
-}
-
-<<<<<<< HEAD
-.a-heading{
-  text-decoration: none;
-  font-family: "Fredoka One", cursive;
-  color: black;
-  font-size: 15px;
-  display: flex;
-  
-}
-
-=======
->>>>>>> 2d38251d77f91aabc5067c57f5920f7564eb328a
-.main-button {
-  align-items: center;
   border: 0;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: rgba(0, 102, 255, 0.2) 0 15px 30px -5px;
-  color: black;
-  display: flex;
-  font-family: "Fredoka One", cursive;
-  font-size: 2vh;
-  line-height: 1em;
-  padding: 3px;
-  text-decoration: none;
-  margin: 10px;
-}
-
-.main-button span {
-  background-color: white;
-  padding: 6px 12px;
   border-radius: 6px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  border: 3px solid black;
+  transition: 300ms;
+}
+.h-btn span {
+  background-color: white;
+  border-radius: 5px;
   width: 100%;
   height: 100%;
   transition: 300ms;
-  padding: 10px 15px;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.main-button:hover {
+.h-btn:hover {
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   color: white;
+  border:none;
+  transition: 300ms;
+}
+.h-btn:hover span {
+  background-color: rgb(33, 37, 66);
+    transition: 300ms;
 }
 
-.main-button:hover span {
-  background-color: rgb(5, 6, 45);
+.m-btn{
+  width: 85%;
+  height: 85%;
+  font-size: 3.5vh;
+  font-family: "Fredoka One", cursive;
+  letter-spacing: 1px;
+  justify-content: center;
+  font-size: 13px;
+  margin: 1%;
+
+}
+
+.title-box{
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  margin-top: 15vh;
+}
+
+.title-box p {
+  font-family: "Fredoka One", cursive;
+  color: rgb(240, 240, 240);
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 7vh;
+  line-height: .5rem;
+}
+
+.subtitle-box {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  color: #7466d1;
+  text-align: center;
 }
 
 /* Animation arrow-> */
