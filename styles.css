@@ -305,3 +305,7 @@ a {
     color: black;
     text-decoration: none;
 }
+
+#click-here {
+    color: rgb(241, 241, 241);
+}
