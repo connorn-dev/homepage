@@ -307,5 +307,5 @@ a {
 }
 
 #click-here {
-    color: rgb(241, 241, 241);
+    color: rgb(241, 241, 241) !important;
 }
