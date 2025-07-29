@@ -6,9 +6,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Add the following two lines.
   basePath: isProd ? '/homepage' : '',
-  assetPrefix: isProd ? '/homepage/' : '',
+  assetPrefix: isProd ? '/homepage/' : '', // Note the trailing slash here
 };
 
 module.exports = nextConfig;
