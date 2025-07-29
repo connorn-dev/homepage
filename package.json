@@ -1,0 +1,20 @@
+{
+  "name": "connorn-dev-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "deploy": "GITHUB_PAGES=true npm run build && npm run export && gh-pages -d out"
+  },
+  "dependencies": {
+    "next": "14.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+} 
