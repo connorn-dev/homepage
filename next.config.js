@@ -1,11 +1,14 @@
-/** @type {import('next').NextConfig} */
-const isGithubPages = process.env.GITHUB_PAGES === 'true';
-const repo = 'homepage'; // Change if your repo name is different
+const isProd = process.env.NODE_ENV === 'production';
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/homepage',
-  assetPrefix: '/homepage/',
+  images: {
+    unoptimized: true,
+  },
+  // Add the following two lines.
+  basePath: isProd ? '/homepage' : '',
+  assetPrefix: isProd ? '/homepage/' : '',
 };
 
-module.exports = nextConfig; 
+module.exports = nextConfig;
